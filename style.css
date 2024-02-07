@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: red;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.main {
+    padding: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.img {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.but {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 40px 20px;
+    padding: 10px 20px;
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+#but2 {
+    background-color: rgb(24, 229, 133); 
+    position: absolute;
+    left: 685px;
+    top: 450px;
+}
+
+.xin {
+    width: 700px;
+    height: 500px;
+   
+    background-color: #fff;
+    opacity: 0; /* Ban đầu ẩn phần tử */
+    transform: translateY(20px); /* Ban đầu dịch phần tử xuống dưới 20px */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thêm hiệu ứng chuyển động */
+    position: fixed; /* Đặt vị trí của phần tử là cố định */
+    top: 20px; /* Khoảng cách từ trên xuống màn hình */
+    left: 50%; /* Đặt vị trí ngang ở giữa màn hình */
+    transform: translateX(-50%) translateY(20px); /* Dịch chuyển phần tử ngang 50% và dọc 20px */
+    z-index: 999; /* Đảm bảo phần tử hiển thị trên các phần tử khác */
+    pointer-events: none; /* Không nhận sự kiện từ người dùng */
+padding: 100px;
+
+}
+.xin.show {
+ 
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Hiển thị phần tử */
+    pointer-events: auto; /* Cho phép nhận sự kiện từ người dùng */
+}
+
+.hehe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Ngăn chặn hiển thị nội dung vượt ra khỏi phần tử cha */
+}
+#img2{
+    width: 520px;
+    height: 220px;
+    display: flex; 
+    
+   
+}
+#h2{
+    background-color:#fff ;
+    color: black;
+}
+.img2 {
+    background-color: #fff;
+    width: 50%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của .img2 */
+   /* Biến .img2 thành một flex container */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.img3{
+    width: 50%; 
+}
+
+
+
